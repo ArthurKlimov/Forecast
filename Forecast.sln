@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.Web", "Forecast.Web\Forecast.Web.csproj", "{1FCDFD3F-9EF1-4E64-97C6-FD22CC3E048C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forecast.Web", "Forecast.Web\Forecast.Web.csproj", "{1FCDFD3F-9EF1-4E64-97C6-FD22CC3E048C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.BL", "Forecast.BL\Forecast.BL.csproj", "{D660EE1D-E688-42A5-8AF9-AFE6071E415C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forecast.BL", "Forecast.BL\Forecast.BL.csproj", "{D660EE1D-E688-42A5-8AF9-AFE6071E415C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.DA", "Forecast.DA\Forecast.DA.csproj", "{8A768AD2-FE86-4746-9987-594E424A051D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forecast.DA", "Forecast.DA\Forecast.DA.csproj", "{8A768AD2-FE86-4746-9987-594E424A051D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
