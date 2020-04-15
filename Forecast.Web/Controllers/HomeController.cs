@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Forecast.BL.Infrastructure;
+﻿using Forecast.BL.Infrastructure;
+using Forecast.BL.Interfaces;
+using Forecast.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System.Threading.Tasks;
 
 namespace Forecast.Web.Controllers
 {
@@ -17,11 +15,20 @@ namespace Forecast.Web.Controllers
         //    _accessor = accessor;
         //}
 
-        public IActionResult Index()
+        private IWeatherService _weatherService;
+
+        public HomeController(IWeatherService weatherService)
         {
-            //var userIP = _accessor.ActionContext.HttpContext.Connection.RemoteIpAddress;
-            var weather = WeatherStackClient.GetCurrentCityWeather("Petrozavodsk");
-            return View();
+            _weatherService = weatherService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var currentWeather = await _weatherService.GetCurrentCityWeather("Petrozavodsk");
+
+            var vm = new IndexViewModel(currentWeather);
+
+            return View(vm);
         }
     }
 }
