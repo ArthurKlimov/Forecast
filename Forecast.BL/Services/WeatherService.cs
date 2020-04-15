@@ -11,7 +11,7 @@ namespace Forecast.BL.Services
     {
         public async Task<CurrentCityWeatherDto> GetCurrentCityWeather(string city)
         {
-            var response = await WeatherStackClient.GetCurrentCityWeather("Petrozavodsk");
+            var response = await WeatherStackClient.GetCurrentCityWeather(city);
             if (response.CurrentWeather == null)
                 return new CurrentCityWeatherDto();
 

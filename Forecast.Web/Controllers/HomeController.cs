@@ -1,5 +1,4 @@
-﻿using Forecast.BL.Infrastructure;
-using Forecast.BL.Interfaces;
+﻿using Forecast.BL.Interfaces;
 using Forecast.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
