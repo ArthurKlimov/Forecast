@@ -25,6 +25,8 @@ namespace Forecast.Web
             }
 
             app.UseMvcWithDefaultRoute();
+
+            app.UseStaticFiles();
         }
     }
 }
