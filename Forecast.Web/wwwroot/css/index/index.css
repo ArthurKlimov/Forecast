@@ -1,0 +1,150 @@
+﻿@font-face {
+    font-family: 'Montserrat';
+    src: url(../../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+
+body {
+    background: url(../../images/index/fog-forest.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+}
+
+p {
+    margin: 0px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.window {
+    background: #FFF;
+    height: 828px;
+    width: 615px;
+    border-radius: 10px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.font-color-blue {
+    color: #5393DE;
+}
+
+.select {
+    height: 30px;
+    width: 178px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    padding-left: 12px;
+    color: #5393DE;
+    -webkit-appearance: none;
+    background: url(/icons/arrow-down-solid.svg) no-repeat;
+    background-size: 12px 13px;
+    background-position-x: 155px;
+    background-position-y: 7px;
+    outline: none;
+}
+
+.input {
+    width: 205px;
+    height: 30px;
+    padding-left: 11px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+input[type=text]::-webkit-input-placeholder {
+    color: #5393DE;
+}
+
+.m-right-20 {
+    margin-right: 20px;
+}
+
+.m-top-15 {
+    margin-top: 15px;
+}
+
+.m-top-30 {
+    margin-top: 30px;
+}
+
+.m-left-25 {
+    margin-left: -25px;
+}
+
+.m-rigth-5 {
+    margin-right: 5px;
+}
+
+.m-top-50 {
+    margin-top: 50px;
+}
+
+.m-left-rigt-30 {
+    margin-left: 30px; 
+    margin-right: 30px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.pressure-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.humidity-icon {
+    width: 13px;
+    height: 18px;
+}
+
+.button {
+    width: 205px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    color: #FFF;
+    background-color: #5393DE;
+}
+
+.footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+

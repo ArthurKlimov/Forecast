@@ -4,18 +4,60 @@
 
 }
 
-@Model.City
-<br />
-@Model.Time
-<br />
-<img src="@Model.IconPath" />
-<br />
-Description @Model.WeatherDescription
-<br />
-Temperature @Model.Temperature
-<br />
-Feels Like @Model.FeelsLike
-<br />
-Pressure @Model.Pressure
-<br />
-Humidity @Model.Humidity
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Forecast</title>
+    <link rel="stylesheet" type="text/css" href="~/css/index/index.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/select2/css/select2.min.css"/>
+    <script src="~/lib/select2/js/select2.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="window">
+            <div class="m-top-30 centered">
+                <h1 class="font-size-18 m-right-20">The current weather in</h1>
+                <select class="js-example-basic-single select font-size-18">
+                    <option class="blue-text" selected>Petrozavodsk</option>
+                </select>
+            </div>
+            <div class="centered flex-column">
+                <p class="font-size-18 m-top-15">12:08</p>
+                <img src="~/images/weather-icons/113.png" alt="weatherIcon"/>
+                <p class="font-size-24">Moderate rain</p>
+                <p class="font-size-24 font-color-blue">13°C (feels like -5°C)</p>
+            </div>
+            <div class="centered">
+                <img src="~/icons/pressure.png" alt="pressure" class="pressure-icon m-left-25 "/>
+                <p class="m-right-20 font-color-blue font-size-18">760mm</p>
+                <img src="~/icons/humidity.svg" alt="humidity" class="humidity-icon m-rigth-5" />
+                <p class="font-color-blue font-size-18">80%</p>
+            </div>
+            <div class="m-top-50">
+                <p class="centered font-size-18">Subscribe and get a forecast everyday</p>
+                <div class="centered m-top-15">
+                    <input type="text" placeholder="What's your name?" class="input m-right-20 font-size-18 font-color-blue"/>
+                    <input type="text" placeholder="Your email" class="input font-size-18 font-color-blue"/>
+                </div>
+                <div class="centered">
+                    <input type="button" value="Subscribe" class="button m-top-15 font-size-18"/>
+                </div>
+            </div>
+                <hr class="m-left-rigt-30 m-top-50" />
+            <div class="footer m-left-rigt-30">
+                <p class="font-size-12 m-top-30">
+                    This website's developed with free API’s by WeatherCast & DaData, and it isn't <br />a commercial project at all. I don't want to benefit except to find a new job.
+                    <br />
+                    (Because this website's like a portfolio)
+                    <br />
+                    Best regards to all
+                <br />
+                <br />
+                <a href="https://petrozavodsk.hh.ru/resume/d392cb72ff07c513120039ed1f6f4559306572">My CV</a>
+                <br />
+                © Klimov Artur Yurievich</>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

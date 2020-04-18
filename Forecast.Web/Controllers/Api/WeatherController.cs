@@ -7,11 +7,11 @@ namespace Forecast.Web.Controllers.Api
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ApiWeatherController : ControllerBase
+    public class WeatherController : ControllerBase
     {
         private IWeatherService _weatherService;
 
-        public ApiWeatherController(IWeatherService weatherService)
+        public WeatherController(IWeatherService weatherService)
         {
             _weatherService = weatherService;
         }

@@ -1,4 +1,5 @@
-﻿using Forecast.BL.Interfaces;
+﻿using Forecast.BL.Dtos.CurrentCityWeather;
+using Forecast.BL.Interfaces;
 using Forecast.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -23,7 +24,9 @@ namespace Forecast.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var currentWeather = await _weatherService.GetCurrentCityWeather("Petrozavodsk");
+            //var currentWeather = await _weatherService.GetCurrentCityWeather("Petrozavodsk");
+
+            var currentWeather = new CurrentCityWeatherDto();
 
             var vm = new IndexViewModel(currentWeather);
 
