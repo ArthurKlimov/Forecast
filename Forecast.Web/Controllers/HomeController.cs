@@ -24,12 +24,9 @@ namespace Forecast.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //var currentWeather = await _weatherService.GetCurrentCityWeather("Petrozavodsk");
-
-            var currentWeather = new CurrentCityWeatherDto();
-
+            var currentWeather = await _weatherService.GetCurrentCityWeather("Petrozavodsk");
             var vm = new IndexViewModel(currentWeather);
-
+            
             return View(vm);
         }
     }
